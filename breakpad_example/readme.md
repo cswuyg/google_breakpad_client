@@ -1,0 +1,1 @@
+A guard process and normal process,they are in one physical file.when normal process crash guard proces will release a dump and upload it to the server. 
