@@ -91,7 +91,6 @@ namespace MyClient
 	{
 		wchar_t buffer[128] = { 0 };
 		GUID guid;
-
 		if (::CoCreateGuid(&guid) != S_OK)
 		{
 			return L"";

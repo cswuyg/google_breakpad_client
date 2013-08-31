@@ -37,13 +37,10 @@ void CmdlineParser::Parser()
 	{
 		return;
 	}
-
-	CComBSTR bstrKey;
-	CComBSTR bstrValue;
 	int num_args = 0;
-	LPWSTR* lpwszArgv = ::CommandLineToArgvW(cmdline_.c_str(), &num_args);	
+	wchar_t** arguments = ::CommandLineToArgvW(cmdline_.c_str(), &num_args);	
 //Just first argument, I don't care other argument.
-	std::wstring argum = lpwszArgv[0];
+	std::wstring argum = arguments[0];
 	if (argum.empty())
 	{
 		return;
@@ -71,5 +68,4 @@ void CmdlineParser::Parser()
 		}
 		argum = argum.substr(space_pos);
 	}
-
 }
