@@ -13,10 +13,10 @@ cswuyg@gmail.com
 int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lpstrCmdLine, int /*nCmdShow*/)
 {
 	CmdlineParser cmd_parse(lpstrCmdLine);
-	std::wstring mutex_name = cmd_parse.GetValueByKey(L"crash_server");
-	if (!mutex_name.empty())
+	std::wstring server_start_event_name = cmd_parse.GetValueByKey(L"crash_server");
+	if (!server_start_event_name.empty())
 	{
-		MyServer::ServerMain(mutex_name);
+		MyServer::ServerMain(server_start_event_name);
 		return 0;
 	}
 	else

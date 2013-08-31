@@ -109,8 +109,7 @@ namespace MyClient
 		::GetModuleFileName(NULL, lpszFileName, MAX_PATH);
 		std::wstring strFullName = lpszFileName;
 		std::wstring strGUID = GetGUIDStr();
-		::CreateMutex(NULL, TRUE, strGUID.c_str());
-		HANDLE hEvent = ::CreateEvent(NULL, FALSE, FALSE, (strGUID + L"_").c_str());
+		HANDLE hEvent = ::CreateEvent(NULL, FALSE, FALSE, strGUID.c_str());
 		std::wstring strParam = L"crash_server=";
 		strParam += strGUID;
 		::ShellExecute(NULL, L"open", strFullName.c_str(), strParam.c_str(), NULL, SW_SHOWNORMAL);
