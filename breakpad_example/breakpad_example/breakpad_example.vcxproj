@@ -119,22 +119,22 @@
   <ItemGroup>
     <ClCompile Include="breakpad_example.cpp" />
     <ClCompile Include="common\cmdline_parse.cc" />
-    <ClCompile Include="crash_example_exe\MainDlg.cc" />
-    <ClCompile Include="crash_example_exe\my_example_exe.cc" />
-    <ClCompile Include="crash_server_exe\crash_server_main_exe.cc" />
+    <ClCompile Include="guard_process_exe\guard_process_main_exe.cc" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="work_process_exe\MainDlg.cc" />
+    <ClCompile Include="work_process_exe\work_process_exe.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common\cmdline_parse.h" />
     <ClInclude Include="common\common.h" />
-    <ClInclude Include="crash_example_exe\MainDlg.h" />
-    <ClInclude Include="crash_example_exe\my_example_exe.h" />
-    <ClInclude Include="crash_server_exe\crash_server_main_exe.h" />
+    <ClInclude Include="guard_process_exe\guard_process_main_exe.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="work_process_exe\MainDlg.h" />
+    <ClInclude Include="work_process_exe\work_process_exe.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="breakpad_example.rc" />

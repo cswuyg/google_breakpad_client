@@ -13,14 +13,14 @@
       <UniqueIdentifier>{ba1017ba-b703-4480-aadb-fbf9a7e798ce}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;manifest</Extensions>
     </Filter>
-    <Filter Include="Source Files\crash_server_exe">
-      <UniqueIdentifier>{5c9ef33a-0e9b-41a6-ba18-6d484e5286f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\crash_example_exe">
-      <UniqueIdentifier>{4b6c2f02-948c-4967-acff-559afbe88b9f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\common">
       <UniqueIdentifier>{61ba6469-7223-4209-a178-0bd5ffeafb1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\work_process_exe">
+      <UniqueIdentifier>{4b6c2f02-948c-4967-acff-559afbe88b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\guard_process_exe">
+      <UniqueIdentifier>{5c9ef33a-0e9b-41a6-ba18-6d484e5286f5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -30,17 +30,17 @@
     <ClCompile Include="breakpad_example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="crash_server_exe\crash_server_main_exe.cc">
-      <Filter>Source Files\crash_server_exe</Filter>
-    </ClCompile>
     <ClCompile Include="common\cmdline_parse.cc">
       <Filter>Source Files\common</Filter>
     </ClCompile>
-    <ClCompile Include="crash_example_exe\MainDlg.cc">
-      <Filter>Source Files\crash_example_exe</Filter>
+    <ClCompile Include="work_process_exe\work_process_exe.cc">
+      <Filter>Source Files\work_process_exe</Filter>
     </ClCompile>
-    <ClCompile Include="crash_example_exe\my_example_exe.cc">
-      <Filter>Source Files\crash_example_exe</Filter>
+    <ClCompile Include="work_process_exe\MainDlg.cc">
+      <Filter>Source Files\work_process_exe</Filter>
+    </ClCompile>
+    <ClCompile Include="guard_process_exe\guard_process_main_exe.cc">
+      <Filter>Source Files\guard_process_exe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,20 +50,20 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="crash_server_exe\crash_server_main_exe.h">
-      <Filter>Source Files\crash_server_exe</Filter>
-    </ClInclude>
-    <ClInclude Include="crash_example_exe\my_example_exe.h">
-      <Filter>Source Files\crash_example_exe</Filter>
-    </ClInclude>
     <ClInclude Include="common\cmdline_parse.h">
       <Filter>Source Files\common</Filter>
     </ClInclude>
     <ClInclude Include="common\common.h">
       <Filter>Source Files\common</Filter>
     </ClInclude>
-    <ClInclude Include="crash_example_exe\MainDlg.h">
-      <Filter>Source Files\crash_example_exe</Filter>
+    <ClInclude Include="work_process_exe\MainDlg.h">
+      <Filter>Source Files\work_process_exe</Filter>
+    </ClInclude>
+    <ClInclude Include="work_process_exe\work_process_exe.h">
+      <Filter>Source Files\work_process_exe</Filter>
+    </ClInclude>
+    <ClInclude Include="guard_process_exe\guard_process_main_exe.h">
+      <Filter>Source Files\guard_process_exe</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

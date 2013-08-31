@@ -6,8 +6,8 @@ cswuyg@gmail.com
 #include "stdafx.h"
 
 #include "common\cmdline_parse.h"
-#include "crash_server_exe\crash_server_main_exe.h"
-#include "crash_example_exe\my_example_exe.h"
+#include "guard_process_exe\guard_process_main_exe.h"
+#include "work_process_exe\work_process_exe.h"
 
 
 int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lpstrCmdLine, int /*nCmdShow*/)
@@ -16,12 +16,12 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 	std::wstring server_start_event_name = cmd_parse.GetValueByKey(L"crash_server");
 	if (!server_start_event_name.empty())
 	{
-		MyServer::ServerMain(server_start_event_name);
+		GuardProcess::GuardProcessMain(server_start_event_name);
 		return 0;
 	}
 	else
 	{
-		MyClient::MyExampleMain(hInstance);
+		WorkProcess::WorkProcessMain(hInstance);
 		return 0;
 	}
 }

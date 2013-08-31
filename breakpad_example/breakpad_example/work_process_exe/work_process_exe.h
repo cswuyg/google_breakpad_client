@@ -8,7 +8,7 @@ cswuyg@gmail.com
 #include <client\windows\common\ipc_protocol.h>
 
 
-namespace MyClient
+namespace WorkProcess
 {
 	static int kCustomInfoCount = 2;
 	static google_breakpad::CustomInfoEntry kCustomInfoEntries[] = {
@@ -18,6 +18,6 @@ namespace MyClient
 
 	std::wstring GetGUIDStr();
 	void AddExceptionCatch();
-	void MyExampleMain(HINSTANCE hInstance);
+	void WorkProcessMain(HINSTANCE hInstance);
 	void StartServerExe();
 }

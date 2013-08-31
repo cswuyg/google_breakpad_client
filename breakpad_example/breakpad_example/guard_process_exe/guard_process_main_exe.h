@@ -9,9 +9,9 @@ cswuyg@gmail.com
 #include <string>
 #include <map>
 
-namespace MyServer
+namespace GuardProcess
 {
-	void ServerMain(const std::wstring& server_start_event_name);
+	void GuardProcessMain(const std::wstring& server_start_event_name);
 
 	BOOL CrashServerStart(const std::wstring& event_name); 
 	void ShowClientCrashed(void* context, const google_breakpad::ClientInfo* client_info, const std::wstring* dump_path);

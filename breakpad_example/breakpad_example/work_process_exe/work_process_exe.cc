@@ -5,7 +5,7 @@ cswuyg@gmail.com
 */
 #include "stdafx.h"
 
-#include "my_example_exe.h"
+#include "work_process_exe.h"
 #include "MainDlg.h"
 #include "..\common\common.h"
 
@@ -13,12 +13,12 @@ cswuyg@gmail.com
 #include <client\windows\handler\exception_handler.h>
 
 
-namespace MyClient
+namespace WorkProcess
 {
 	CAppModule _Module;
 	static std::wstring g_dump_path;
 
-	void MyExampleMain(HINSTANCE hInstance)
+	void WorkProcessMain(HINSTANCE hInstance)
 	{
 		StartServerExe();
 		AddExceptionCatch();

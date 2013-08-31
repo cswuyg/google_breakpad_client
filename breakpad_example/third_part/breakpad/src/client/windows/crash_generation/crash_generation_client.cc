@@ -359,8 +359,8 @@ bool CrashGenerationClient::SignalCrashEventAndWait() {
   if (!SetEvent(crash_event_)) {
     return false;
   }
-
   HANDLE wait_handles[kWaitEventCount] = {crash_generated_, server_alive_};
+
 
   DWORD result = WaitForMultipleObjects(kWaitEventCount,
                                         wait_handles,
